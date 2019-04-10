@@ -110,7 +110,7 @@ if(document.body.ontouchstart !== undefined){
       lastPoint = {"x": x,"y": y,}
     }
   }
-  yyy.onmousemove = function(aaa) {
+  yyy.ontouchmove = function(aaa) {
     var x = aaa.touches[0].clientX;
     var y = aaa.touches[0].clientY;
     
