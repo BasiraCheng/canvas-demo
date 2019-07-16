@@ -7,7 +7,7 @@ ul,ol{list-style: none;}
   overflow: hidden;
   } 
 #xxx {display: block;}
-body {overflow: hidden;}
+body {overflow: hidden; background: yellow;}
 .actions {
   position: fixed;
   top: 0;
