@@ -35,6 +35,7 @@ red.onclick = function(){
   context.strokeStyle = 'red'
   red.classList.add('active')
   green.classList.remove('active')
+  yellow.classList.remove('active')
   blue.classList.remove('active')
 }
 green.onclick = function(){
@@ -42,6 +43,15 @@ green.onclick = function(){
   context.strokeStyle = 'green'
   green.classList.add('active')
   red.classList.remove('active')
+  yellow.classList.remove('active')
+  blue.classList.remove('active')
+}
+yellow.onclick = function(){
+  context.fillStyle = 'yellow'
+  context.strokeStyle = 'yellow'
+  yellow.classList.add('active')
+  red.classList.remove('active')
+  green.classList.remove('active')
   blue.classList.remove('active')
 }
 blue.onclick = function(){
@@ -50,13 +60,14 @@ blue.onclick = function(){
   blue.classList.add('active')
   red.classList.remove('active')
   green.classList.remove('active') 
+  yellow.classList.remove('active')
 }
 
 thin.onclick = function(){
-  lineWidth = 5
+  lineWidth = 2
 }
 thick.onclick = function(){
-  lineWidth = 10
+  lineWidth = 5
 }
 
 function autoSetCanvasSize(canvas) {
